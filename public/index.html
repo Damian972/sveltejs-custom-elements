@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Svelte custom-elements</title>
+		<script src="assets/app.js"></script>
+	</head>
+	<body>
+		<say-hello to="Billy"></say-hello>
+		<hr />
+		<h2>Total clicks: <span id="count">0</span></h2>
+		<click-counter id="click-counter"> </click-counter>
+	</body>
+
+	<script>
+		const clickCounter = document.querySelector('#click-counter');
+		clickCounter.addEventListener('clicked', e => {
+			console.log(e);
+			document.querySelector('#count').innerHTML = e.detail;
+		});
+	</script>
+</html>
