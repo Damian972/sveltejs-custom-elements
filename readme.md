@@ -3,7 +3,7 @@
 -   Clone the repo:
 
 ```bash
-git clone sveltejs-custom-elements.git
+git clone https://github.com/Damian972/sveltejs-custom-elements.git
 ```
 
 -   Install dependencies:
